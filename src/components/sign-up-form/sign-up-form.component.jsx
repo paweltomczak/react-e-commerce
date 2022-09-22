@@ -43,6 +43,7 @@ const SignUpForm = () => {
       resetFormFields();
       setMessage('Account has been successfully created.');
     } catch (error) {
+      console.log(error);
       switch (error.code) {
         case 'auth/email-already-in-use':
           setMessage('Cannot create a user, email already in use');
