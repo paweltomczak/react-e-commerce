@@ -1,5 +1,4 @@
-import { useEffect } from 'react';
-import { createContext, useState } from 'react';
+import { useEffect, createContext, useState } from 'react';
 
 const addCartItem = (cartItems, productToAdd) => {
   const existingCartItem = cartItems.find(
